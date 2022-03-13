@@ -1,4 +1,4 @@
-if(window.innerHieght>300){
+
   console.log('pip');
 function growingKnoll(){
 
@@ -78,4 +78,14 @@ if(window.innerWidth<700){
 }else{
   console.log("else");
 }
-}
+let butT=false;
+window.addEventListener('scroll',()=>{
+  if(scrollY>=100&&butT==true){
+      console.log("ooO");
+
+  }else if(scrollY<150){
+    console.log("<<<");
+  }else{
+    console.log("else");
+  }
+});
