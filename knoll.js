@@ -1,6 +1,8 @@
 console.log('pip');
-if(window.innerWidth<700){
-  console.log('<700');
+function growingKnoll(){
+
+}
+function flugegeheimen(){
   let pimple_box=document.createElement('pimple_box');
   document.querySelector('article').appendChild(pimple_box);
   pimple_box.style.cssText=`
@@ -16,21 +18,62 @@ if(window.innerWidth<700){
   let knoll=document.createElement('knoll');
   document.querySelector('pimple_box').appendChild(knoll);
   knoll.style.cssText=`
-  display:flex;
-  // position:fixed;
-  justify-content:flex-start;
-  align-items:flex-end;
-  width:40px;
-  height:100px;
-  background:green;
-  border-top-left-radius: 333px;
-  border-bottom-left-radius:333px;
-  // margin-top:110px;
-  transition: all 1s ease-out;
+    display:flex;
+    // position:fixed;
+    justify-content:flex-start;
+    align-items:flex-end;
+    width:30px;
+    height:100px;
+    background:green;
+    border-top-left-radius: 333px;
+    border-bottom-left-radius:333px;
+    // margin-top:110px;
+    transition: all 1s ease-out;
   `;
-
+  knoll.classList.add('bob');
+  let countClick=+0;
+  document.querySelector('.bob').addEventListener('click',()=>{
+    countClick++;
+    if(countClick==1){
+      knoll.style.cssText=`
+      display:flex;
+      // position:fixed;
+      justify-content:flex-start;
+      align-items:flex-end;
+      width:270px;
+      max-width:100%;
+      height:100px;
+      background:green;
+      border-top-left-radius: 333px;
+      border-bottom-left-radius:333px;
+      // margin-top:110px;
+      transition: all 1s ease-out;
+      `;
+    }else if(countClick>1){
+      knoll.style.cssText=`
+      display:flex;
+      // position:fixed;
+      justify-content:flex-start;
+      align-items:flex-end;
+      width:30px;
+      max-width:100%;
+      height:100px;
+      background:green;
+      border-top-left-radius: 333px;
+      border-bottom-left-radius:333px;
+      // margin-top:110px;
+      transition: all 1s ease-out;
+      `;
+      countClick=0;
+    }
+  });
+}
+if(window.innerWidth<700){
+  console.log('<700');
+  flugegeheimen();
 }else if(window.innerWidth<1100){
   console.log("<1100");
+  flugegeheimen();
 }else{
   console.log("else");
 }
