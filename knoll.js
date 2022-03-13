@@ -22,7 +22,7 @@ function flugegeheimen(){
     display:flex;
     // position:fixed;
     justify-content:flex-start;
-    align-items:flex-end;
+    align-items:center;
     width:30px;
     height:100px;
     background:green;
@@ -31,6 +31,8 @@ function flugegeheimen(){
     // margin-top:110px;
     transition: all 1s ease-out;
   `;
+  knoll.innerHTML=`❌`;
+
   knoll.classList.add('bob');
   let countClick=+0;
   document.querySelector('.bob').addEventListener('click',()=>{
@@ -40,7 +42,7 @@ function flugegeheimen(){
       display:flex;
       // position:fixed;
       justify-content:flex-start;
-      align-items:flex-end;
+      align-items:center;
       width:270px;
       max-width:100%;
       height:100px;
@@ -48,14 +50,16 @@ function flugegeheimen(){
       border-top-left-radius: 333px;
       border-bottom-left-radius:333px;
       // margin-top:110px;
+      opacity:1;
       transition: all 1s ease-out;
       `;
+      knoll.innerHTML=`ведуться разработки pimple knoll`;
     }else if(countClick>1){
       knoll.style.cssText=`
       display:flex;
       // position:fixed;
       justify-content:flex-start;
-      align-items:flex-end;
+      align-items:center;
       width:30px;
       max-width:100%;
       height:100px;
@@ -63,8 +67,11 @@ function flugegeheimen(){
       border-top-left-radius: 333px;
       border-bottom-left-radius:333px;
       // margin-top:110px;
+      opacity:0.3;
       transition: all 1s ease-out;
       `;
+      knoll.innerHTML=``;
+
       countClick=0;
     }
   });
