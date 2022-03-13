@@ -1,4 +1,5 @@
-console.log('pip');
+if(window.innerHieght>300){
+  console.log('pip');
 function growingKnoll(){
 
 }
@@ -76,4 +77,5 @@ if(window.innerWidth<700){
   flugegeheimen();
 }else{
   console.log("else");
+}
 }
