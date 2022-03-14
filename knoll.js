@@ -66,7 +66,7 @@ function flugegeheimen(){
       align-items:center;
       width:100%;
       height:100%;
-      background:rgba(0,255,0,0.3);
+      background:rgba(255,255,255,0.7);
       flex-direction:column;
       // z-index:0;
       transition: all 1s ease-out;
