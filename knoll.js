@@ -1,7 +1,8 @@
 
   console.log('pip');
 function growingKnoll(){
-
+  document.querySelector('pimple_box').remove();
+// knoll.style.cssText=``;
 }
 function flugegeheimen(){
   let pimple_box=document.createElement('pimple_box');
@@ -29,6 +30,7 @@ function flugegeheimen(){
     border-top-left-radius: 333px;
     border-bottom-left-radius:333px;
     // margin-top:110px;
+    opacity:0.3;
     transition: all 1s ease-out;
   `;
   knoll.innerHTML=`❌`;
@@ -53,7 +55,7 @@ function flugegeheimen(){
       opacity:1;
       transition: all 1s ease-out;
       `;
-      knoll.innerHTML=`ведуться разработки pimple knoll`;
+      knoll.innerHTML=`разработки pimple knoll`;
     }else if(countClick>1){
       knoll.style.cssText=`
       display:flex;
@@ -70,28 +72,38 @@ function flugegeheimen(){
       opacity:0.3;
       transition: all 1s ease-out;
       `;
-      knoll.innerHTML=``;
+      knoll.innerHTML=`⭐`;
 
       countClick=0;
     }
   });
-}
-if(window.innerWidth<700){
-  console.log('<700');
-  flugegeheimen();
-}else if(window.innerWidth<1100){
-  console.log("<1100");
-  flugegeheimen();
-}else{
-  console.log("else");
-}
+} // end function flugegeheimen
+
+
+// if(window.innerWidth<700){
+//   console.log('<700');
+//   flugegeheimen();
+// }else if(window.innerWidth<1100){
+//   console.log("<1100");
+//   flugegeheimen();
+// }else{
+//   console.log("else");
+// }
 let butT=false;
 window.addEventListener('scroll',()=>{
-  if(scrollY>=100&&butT==true){
+  if(scrollY>=50){
       console.log("ooO");
+      if(butT==false){
+      flugegeheimen();
+    }else{
+      console.log("butT==false");
+    }
+    butT=true;
 
-  }else if(scrollY<150){
+  }else if(scrollY<50){
     console.log("<<<");
+    growingKnoll();
+    butT=false;
   }else{
     console.log("else");
   }
