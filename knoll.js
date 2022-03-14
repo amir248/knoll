@@ -15,7 +15,7 @@ function flugegeheimen(){
     width:100%; // способ по всей ширине блока
     max-width:100%;
     z-index:9;
-    top:270px; // и пипка на управлятется высотой отсюда
+    top:70px; // и пипка на управлятется высотой отсюда
   `;
   let knoll=document.createElement('knoll');
   document.querySelector('pimple_box').appendChild(knoll);
