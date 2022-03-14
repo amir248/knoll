@@ -80,12 +80,13 @@ function flugegeheimen(){
 } // end function flugegeheimen
 
 
-if(window.innerWidth<700){
-  console.log('<700');
-  // flugegeheimen();
-
-
-}else if(window.innerWidth<1100){
+// if(window.innerWidth<700){
+//   console.log('<700');
+//   // flugegeheimen();
+//
+//
+// }else
+if(window.innerWidth<1100){
   console.log("<1100");
   // flugegeheimen();
   let butT=false;
