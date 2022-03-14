@@ -56,7 +56,7 @@ function flugegeheimen(){
       transition: all 1s ease-out;
       z-index:9;
       `;
-      knoll.innerHTML=`разработки pimple knoll`;
+      knoll.innerHTML=`<strong style='color:red;width:100%; text-align:center;'>pimple knoll</strong>`;
       let display=document.createElement('display');
       document.querySelector('pimple_box').appendChild(display);
       display.style.cssText=`
