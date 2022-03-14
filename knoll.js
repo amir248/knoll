@@ -80,31 +80,33 @@ function flugegeheimen(){
 } // end function flugegeheimen
 
 
-// if(window.innerWidth<700){
-//   console.log('<700');
-//   flugegeheimen();
-// }else if(window.innerWidth<1100){
-//   console.log("<1100");
-//   flugegeheimen();
-// }else{
-//   console.log("else");
-// }
-let butT=false;
-window.addEventListener('scroll',()=>{
-  if(scrollY>=50){
-      console.log("ooO");
-      if(butT==false){
-      flugegeheimen();
-    }else{
-      console.log("butT==false");
-    }
-    butT=true;
+if(window.innerWidth<700){
+  console.log('<700');
+  // flugegeheimen();
 
-  }else if(scrollY<50){
-    console.log("<<<");
-    growingKnoll();
-    butT=false;
-  }else{
-    console.log("else");
-  }
-});
+
+}else if(window.innerWidth<1100){
+  console.log("<1100");
+  // flugegeheimen();
+  let butT=false;
+  window.addEventListener('scroll',()=>{
+    if(scrollY>=50){
+        console.log("ooO");
+        if(butT==false){
+        flugegeheimen();
+      }else{
+        console.log("butT==false");
+      }
+      butT=true;
+
+    }else if(scrollY<50){
+      console.log("<<<");
+      growingKnoll();
+      butT=false;
+    }else{
+      console.log("else");
+    }
+  });
+}else{
+  console.log("else");
+}
