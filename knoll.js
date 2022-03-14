@@ -72,19 +72,8 @@ function flugegeheimen(){
       transition: all 1s ease-out;
       opacity:1;
       `;
-      display.innerHTML=`
-      <p style="background:rgba(25,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/rat-mAscow/'>мАсковские крысы</a></p>
-      <p style="background:rgba(0,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/mAscow/'>мАсква</a></p>
-      <p style="background:rgba(0,0,25,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/moscow-will-lose-the-war/'>москва проиграет войну</a></p>
-      <p style="background:rgba(100,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/justification/'>оправдание войне</a></p>
-      <p style="background:rgba(10,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/facking-moscow/'>facking-moscow</a></p>
-      <p style="background:rgba(0,0,100,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/muscovite/'>мАсковщина</a></p>
-      <p style="background:rgba(0,10,10,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/war-against-moscow/'>война</a></p>
-      <p style="background:rgba(0,255,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/victory-over-fascist-moscow/'>Victory</a></p>
-      <p style="background:rgba(255,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/the-prophecy-of-war-came-true/'>сбылось пророчество</a></p>
-      <p style="background:rgba(100,150,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/fackNews/'>Fack news</a></p>
-      <p style="background:rgba(10,150,70,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/knoll/'>Пипочка knoll</a></p>
-      `;
+      display.innerHTML=`${list[1]}${list[2]}${list[3]}${list[4]}${list[5]}${list[6]}${list[7]}${list[8]}${list[9]}${list[10]}${list[11]}`;
+      // console.log(list);
     }else if(countClick>1){
       knoll.style.cssText=`
       display:flex;
@@ -121,16 +110,16 @@ if(window.innerWidth<1100){
   let butT=false;
   window.addEventListener('scroll',()=>{
     if(scrollY>=50){
-        console.log("ooO");
+        // console.log("ooO");
         if(butT==false){
         flugegeheimen();
       }else{
-        console.log("butT==false");
+        // console.log("butT==false");
       }
       butT=true;
 
     }else if(scrollY<50){
-      console.log("<<<");
+      // console.log("<<<");
       growingKnoll();
       butT=false;
     }else{
@@ -138,5 +127,5 @@ if(window.innerWidth<1100){
     }
   });
 }else{
-  console.log("else");
+  console.log("elseTwo");
 }

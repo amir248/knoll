@@ -1,0 +1,13 @@
+let list={
+    1 : '<p style="background:rgba(25,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/rat-mAscow/">мАсковские крысы</a></p>',
+    2 : '<p style="background:rgba(0,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/mAscow/">мАсква</a></p>',
+    3 : '<p style="background:rgba(0,0,25,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/moscow-will-lose-the-war/">москва проиграет войну</a></p>',
+    4 : '<p style="background:rgba(100,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/justification/">оправдание войне</a></p>',
+    5 : '<p style="background:rgba(10,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/facking-moscow/">facking-moscow</a></p>',
+    6 : '<p style="background:rgba(0,0,100,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/muscovite/">мАсковщина</a></p>',
+    7 : '<p style="background:rgba(0,10,10,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/war-against-moscow/">война</a></p>',
+    8 : '<p style="background:rgba(0,255,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/victory-over-fascist-moscow/">Victory</a></p>',
+    9 : '<p style="background:rgba(255,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/the-prophecy-of-war-came-true/">сбылось пророчество</a></p>',
+    10 : '<p style="background:rgba(100,150,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/fackNews/">Fack news</a></p>',
+    11 : '<p style="background:rgba(10,150,70,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/knoll/">Пипочка knoll</a></p>'
+  };
