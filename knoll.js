@@ -54,8 +54,37 @@ function flugegeheimen(){
       // margin-top:110px;
       opacity:1;
       transition: all 1s ease-out;
+      z-index:9;
       `;
       knoll.innerHTML=`разработки pimple knoll`;
+      let display=document.createElement('display');
+      document.querySelector('pimple_box').appendChild(display);
+      display.style.cssText=`
+      display:flex;
+      position:fixed;
+      justify-content:center;
+      align-items:center;
+      width:100%;
+      height:100%;
+      background:rgba(0,255,0,0.3);
+      flex-direction:column;
+      // z-index:0;
+      transition: all 1s ease-out;
+      opacity:1;
+      `;
+      display.innerHTML=`
+      <p style="background:rgba(25,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/rat-mAscow/'>мАсковские крысы</a></p>
+      <p style="background:rgba(0,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/mAscow/'>мАсква</a></p>
+      <p style="background:rgba(0,0,25,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/moscow-will-lose-the-war/'>москва проиграет войну</a></p>
+      <p style="background:rgba(100,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/justification/'>оправдание войне</a></p>
+      <p style="background:rgba(10,100,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/facking-moscow/'>facking-moscow</a></p>
+      <p style="background:rgba(0,0,100,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/muscovite/'>мАсковщина</a></p>
+      <p style="background:rgba(0,10,10,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/war-against-moscow/'>война</a></p>
+      <p style="background:rgba(0,255,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/victory-over-fascist-moscow/'>Victory</a></p>
+      <p style="background:rgba(255,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/the-prophecy-of-war-came-true/'>сбылось пророчество</a></p>
+      <p style="background:rgba(100,150,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/fackNews/'>Fack news</a></p>
+      <p style="background:rgba(10,150,70,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/knoll/'>Пипочка knoll</a></p>
+      `;
     }else if(countClick>1){
       knoll.style.cssText=`
       display:flex;
@@ -73,7 +102,7 @@ function flugegeheimen(){
       transition: all 1s ease-out;
       `;
       knoll.innerHTML=`⭐`;
-
+      document.querySelector('display').remove();
       countClick=0;
     }
   });
