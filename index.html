@@ -78,7 +78,7 @@
         fetch('./newJSON.json')
           .then(res=> res.json())
           .then(data => console.log(data));
-          document.querySelector('#oJ').innerHTML=`PipOchka!`;
+          document.querySelector('#oJ').innerHTML=`${data[0]}`;
           document.querySelector('h2').innerHTML=`${data[1]}`;
         </script>
         <h1 id='oJ'>Пипочка</h1>
