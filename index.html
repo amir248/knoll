@@ -77,7 +77,12 @@
         <script>
         fetch('./newJSON.json')
           .then(res=> res.json())
-          .then(data => console.log(data));
+          .then(data => {
+            let fileJSON;
+            fileJSON =data;
+            console.log(data);
+          }
+          );
 
         </script>
         <h1 id='oJ'>Пипочка</h1>
