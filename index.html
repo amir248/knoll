@@ -81,7 +81,8 @@
             let fileJSON;
             fileJSON =data;
             let newHead=fileJSON[0];
-            console.log(fileJSON[1]);
+            console.log(fileJSON[0]);
+            document.querySelector('h2').innerHTML=`fileJSON[0]`;
           }
           );
           console.log(`${newHead}`);
@@ -99,7 +100,6 @@
       // console.log(data);
       // document.querySelector('#oJ').innerText=`${data}`;
       // console.log(data[1]);
-      document.querySelector('h2').innerHTML=`fileJSON[0]`;
       </script>
       <div id="sigCommentsBlock" style='max-width:100%;width:900px;'></div>
       <a href="http://sigcomments.com" style="font-size: 0.6em;">Система комментирования SigComments</a>
