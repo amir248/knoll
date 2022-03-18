@@ -75,28 +75,10 @@
       <article>
         <script src="list.json"></script>
         <script>
-        // const getData = (str)=>{
-        // return fetch('newJSON.json');
-        //
-        //     then((response)=>{
-        //         console.log(response);
-        //         return response.json();
-        //     });
-        // }
-        // getData(1);
-        function json(){
-          let requestURL='/newJSON.json';
-          let request = new XMLHttpRequest();
-          request.open('GET', requestURL);
-          request.responseType = 'json';
-          request.send();
-          let fileJson = request.response;
-          console.log(fileJson);
-        }
         fetch('./newJSON.json')
           .then(res=> res.json())
           .then(data => console.log(data));
-console.log(json);
+          document.querySelector(h1).innerHTML=`PIp`;
         </script>
         <h1>Пипочка</h1>
         <p>Та самая пипка. Но pumple дословно переводиться как прыщик, а это в айти технологиях, непозволительная катастрофа! Поэтому лучше называть как бугорок или Knoll - холмик.</p>
