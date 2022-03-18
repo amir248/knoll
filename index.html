@@ -77,7 +77,7 @@
         <script>
         fetch('./newJSON.json')
           .then(res=> res.json())
-          .then(data => let fileJSON);
+          .then(data => console.log(data));
 
         </script>
         <h1 id='oJ'>Пипочка</h1>
@@ -90,9 +90,9 @@
         <p>В айтишной области есть сложная ситуация, когда одно и тоже делается разными путями. Одинаково работает. Но понять ход мыслей как этот путь был выведен. Сложнейшая задача не поддающаяся здравому смыслу. Все понятно, а ход мыслей, его не видно! Это и есть магия! Магия как простая, но с щепоткой сказочного волшебства!</p>
       <strong>P/S. Радуга, единороги, вкусняшки и волшебное настроение!</strong>
       <script>
-      console.log(fileJSON);
+      console.log(data);
       document.querySelector('#oJ').innerText=`${data}`;
-      console.log();
+      console.log(data[1]);
       document.querySelector('h2').innerHTML=`${data[1]}`;
       </script>
       <div id="sigCommentsBlock" style='max-width:100%;width:900px;'></div>
