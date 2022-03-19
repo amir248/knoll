@@ -9,5 +9,6 @@ let list={
     8 : '<p style="background:rgba(0,255,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/victory-over-fascist-moscow/">Victory</a></p>',
     9 : '<p style="background:rgba(255,0,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/the-prophecy-of-war-came-true/">сбылось пророчество</a></p>',
     10 : '<p style="background:rgba(100,150,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/fackNews/">Fack news</a></p>',
-    11 : '<p style="background:rgba(10,150,70,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/knoll/">Пипочка knoll</a></p>'
+    11 : '<p style="background:rgba(10,150,70,0.3);margin:1%;border-radius:7px; text-align:center;"><a href="https://amir248.github.io/knoll/">Пипочка knoll</a></p>',
+    12 : '<p style="background:rgba(150,150,0,0.3);margin:1%;border-radius:7px; text-align:center;"><a href='https://amir248.github.io/nazi-mAscow/'>nazi-mAscow</a></p>'
   };
