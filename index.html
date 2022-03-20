@@ -76,11 +76,13 @@
       <article>
         <script src="list.json"></script>
         <script>
-        fetch('/newJSON.json')
+        fetch('newJSON.json')
           .then(res=> res.json())
           .then(data => {
             let fileJSON;
             fileJSON =data;
+            let newHead=fileJSON[0];
+            console.log(fileJSON[0]);
             document.querySelector('h1').innerText=`${fileJSON[0]}`;
             document.querySelector('h2').innerHTML=`${fileJSON[1]}`;
           }
