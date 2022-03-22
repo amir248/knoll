@@ -72,7 +72,7 @@ function flugegeheimen(){
       transition: all 1s ease-out;
       opacity:1;
       `;
-      display.innerHTML=`${list[1]}${list[2]}${list[3]}${list[4]}${list[5]}${list[6]}${list[7]}${list[8]}${list[9]}${list[10]}${list[11]}${list[12]}`;
+      display.innerHTML=`${list[1]}${list[2]}${list[3]}${list[4]}${list[5]}${list[6]}${list[7]}${list[8]}${list[9]}${list[10]}${list[11]}${list[12]}${list[1]}`;
       // console.log(list);
     }else if(countClick>1){
       knoll.style.cssText=`
