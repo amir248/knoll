@@ -60,6 +60,7 @@ function flugegeheimen(){
       let display=document.createElement('display');
       document.querySelector('pimple_box').appendChild(display);
       display.style.cssText=`
+    
       display:flex;
       position:fixed;
       justify-content:center;
@@ -71,9 +72,14 @@ function flugegeheimen(){
       // z-index:0;
       transition: all 1s ease-out;
       opacity:1;
+      overflow:auto;
       `;
-      display.innerHTML=`${list[1]}${list[2]}${list[3]}${list[4]}${list[5]}${list[6]}${list[7]}${list[8]}${list[9]}${list[10]}${list[11]}${list[12]}${list[1]}`;
-      // console.log(list);
+
+
+        display.innerHTML=`${list[1]}${list[2]}${list[3]}${list[4]}${list[5]}${list[6]}${list[7]}${list[8]}${list[9]}${list[10]}${list[11]}${list[12]}${list[13]}`;
+
+      console.log(list.lenght);
+
     }else if(countClick>1){
       knoll.style.cssText=`
       display:flex;
